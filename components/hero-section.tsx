@@ -70,15 +70,13 @@ export function HeroSection() {
             <div className="lg:col-span-4 flex justify-center lg:justify-end">
               <motion.div variants={imageVariants} className="relative">
                 <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-                  <Image
+                  <img
                     src="/images/aryan-portrait.png"
                     alt="Aryan Saxena Portrait"
-                    fill
-                    className="object-cover rounded-2xl opacity-70 hover:opacity-90 transition-opacity duration-700 ease-out"
+                    className="w-full h-full object-cover rounded-2xl opacity-70 hover:opacity-90 transition-opacity duration-700 ease-out"
                     style={{
                       filter: "contrast(1.1) brightness(1.1)",
                     }}
-                    priority
                   />
                   {/* Subtle overlay for better integration */}
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-background/20 rounded-2xl" />
