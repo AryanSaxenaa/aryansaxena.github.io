@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
-import { Analytics } from "@vercel/analytics/react"
 import { Suspense } from "react"
 
 // Current timestamp to force cache refresh
@@ -11,12 +10,12 @@ export const metadata: Metadata = {
   title: "Aryan Saxena | Computer Engineering Student & Developer",
   description:
     "Portfolio of Aryan Saxena, a Computer Engineering student and full-stack developer building innovative solutions.",
-  metadataBase: new URL("https://damilareoo.xyz"),
+  metadataBase: new URL("https://aryansaxenaa.github.io"),
   openGraph: {
     title: "Aryan Saxena | Computer Engineering Student & Developer",
     description:
       "Portfolio of Aryan Saxena, a Computer Engineering student and full-stack developer building innovative solutions.",
-    url: "https://damilareoo.xyz",
+    url: "https://aryansaxenaa.github.io",
     siteName: "Aryan Saxena | Portfolio",
     images: [
       {
@@ -35,9 +34,9 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Aryan Saxena, a Computer Engineering student and full-stack developer building innovative solutions.",
     images: [`/images/og-image.png?v=${timestamp}`],
-    creator: "@damilare_oo",
+    creator: "@AryanSaxenaa",
   },
-    generator: 'v0.dev'
+    generator: 'Next.js'
 }
 
 export default function RootLayout({
@@ -49,22 +48,22 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Force refresh of social media cache with timestamp */}
-        <meta property="og:image" content={`https://damilareoo.xyz/images/og-image.png?v=${timestamp}`} />
+        <meta property="og:image" content={`https://aryansaxenaa.github.io/images/og-image.png?v=${timestamp}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Aryan Saxena" />
         <meta property="og:image:type" content="image/png" />
 
-        <meta name="twitter:image" content={`https://damilareoo.xyz/images/og-image.png?v=${timestamp}`} />
+        <meta name="twitter:image" content={`https://aryansaxenaa.github.io/images/og-image.png?v=${timestamp}`} />
         <meta name="twitter:image:alt" content="Aryan Saxena" />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* LinkedIn specific */}
-        <meta property="og:image:secure_url" content={`https://damilareoo.xyz/images/og-image.png?v=${timestamp}`} />
+        <meta property="og:image:secure_url" content={`https://aryansaxenaa.github.io/images/og-image.png?v=${timestamp}`} />
 
         {/* Additional social media tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://damilareoo.xyz" />
+        <meta property="og:url" content="https://aryansaxenaa.github.io" />
         <meta property="og:title" content="Aryan Saxena | Computer Engineering Student & Developer" />
         <meta
           property="og:description"
@@ -80,7 +79,6 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <Suspense fallback={<div>Loading...</div>}>
           {children}
-          <Analytics />
         </Suspense>
       </body>
     </html>

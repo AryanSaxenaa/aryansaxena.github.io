@@ -52,8 +52,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Geist", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "system-ui", "sans-serif"],
-        geist: ["Geist", "sans-serif"],
+        sans: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "system-ui", "Inter", "sans-serif"],
+        serif: ["Georgia", "Times New Roman", "serif"],
       },
       fontWeight: {
         light: "300",

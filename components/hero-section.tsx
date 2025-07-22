@@ -71,11 +71,22 @@ export function HeroSection() {
               <motion.div variants={imageVariants} className="relative">
                 <div className="relative w-64 h-64 lg:w-80 lg:h-80">
                   <img
-                    src="/images/portrait.png"
+                    src="/images/aryan-portrait.png"
                     alt="Aryan Saxena Portrait"
                     className="w-full h-full object-cover rounded-2xl opacity-70 hover:opacity-90 transition-opacity duration-700 ease-out"
                     style={{
                       filter: "contrast(1.1) brightness(1.1)",
+                    }}
+                    onError={(e) => {
+                      // Fallback to different image names
+                      const target = e.target as HTMLImageElement;
+                      if (target.src.includes('aryan-portrait.png')) {
+                        target.src = '/images/portrait.png';
+                      } else if (target.src.includes('portrait.png')) {
+                        target.src = './images/aryan-portrait.png';
+                      } else {
+                        target.style.display = 'none';
+                      }
                     }}
                   />
                   {/* Subtle overlay for better integration */}
