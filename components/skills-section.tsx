@@ -1,46 +1,62 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { easeInOut } from "framer-motion"
 
 const skillCategories = [
   {
-    title: "Programming Languages",
+    title: "Languages",
     skills: [
-      { name: "C/C++", level: "Advanced" },
+      { name: "TypeScript", level: "Advanced" },
+      { name: "JavaScript", level: "Advanced" },
       { name: "Python", level: "Advanced" },
-      { name: "JavaScript", level: "Intermediate" },
-      { name: "Solidity", level: "Beginner" },
+      { name: "C", level: "Intermediate" },
+      { name: "C++", level: "Intermediate" },
+      { name: "HTML", level: "Advanced" },
+      { name: "CSS", level: "Advanced" },
       { name: "SQL", level: "Intermediate" },
-    ],
-  },
-  {
-    title: "Web Technologies",
-    skills: [
-      { name: "HTML/CSS", level: "Advanced" },
-      { name: "React", level: "Intermediate" },
-      { name: "Express.js", level: "Intermediate" },
-      { name: "Flask", level: "Intermediate" },
-      { name: "Bootstrap", level: "Intermediate" },
-    ],
-  },
-  {
-    title: "Databases & Tools",
-    skills: [
       { name: "MongoDB", level: "Intermediate" },
-      { name: "Git/GitHub", level: "Advanced" },
-      { name: "Linux", level: "Intermediate" },
-      { name: "VS Code", level: "Advanced" },
-      { name: "Google Colab", level: "Intermediate" },
     ],
   },
   {
-    title: "Specialized Tools",
+    title: "Frameworks & Libraries",
     skills: [
-      { name: "OpenCV", level: "Intermediate" },
-      { name: "NumPy", level: "Intermediate" },
-      { name: "Tkinter", level: "Intermediate" },
-      { name: "Remix IDE", level: "Beginner" },
-      { name: "Machine Learning", level: "Intermediate" },
+      { name: "React.js", level: "Advanced" },
+      { name: "Next.js", level: "Advanced" },
+      { name: "React Native", level: "Advanced" },
+      { name: "Node.js", level: "Advanced" },
+      { name: "Express.js", level: "Advanced" },
+      { name: "Tailwind CSS", level: "Advanced" },
+      { name: "Redux Toolkit", level: "Advanced" },
+      { name: "Framer Motion", level: "Intermediate" },
+      { name: "Mongoose", level: "Intermediate" },
+      { name: "SQLite", level: "Intermediate" },
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
+      { name: "Git", level: "Advanced" },
+      { name: "GitHub", level: "Advanced" },
+      { name: "VS Code", level: "Advanced" },
+      { name: "Vercel", level: "Advanced" },
+      { name: "Firebase", level: "Intermediate" },
+      { name: "Postman", level: "Intermediate" },
+      { name: "GitHub Actions", level: "Intermediate" },
+    ],
+  },
+  {
+    title: "APIs & Services",
+    skills: [
+      { name: "JWT Authentication", level: "Advanced" },
+      { name: "Auth0", level: "Intermediate" },
+      { name: "Twilio", level: "Intermediate" },
+      { name: "SendGrid", level: "Intermediate" },
+      { name: "jsPDF", level: "Intermediate" },
+      { name: "MongoDB Atlas", level: "Intermediate" },
+      { name: "REST APIs", level: "Advanced" },
+      { name: "Plaid", level: "Intermediate" },
+      { name: "Gemini", level: "Intermediate" },
     ],
   },
 ]
@@ -60,7 +76,7 @@ export function SkillsSection() {
       transition: {
         staggerChildren: 0.1,
         delayChildren: 0.2,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }
@@ -72,7 +88,7 @@ export function SkillsSection() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }
@@ -84,7 +100,7 @@ export function SkillsSection() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }
@@ -96,7 +112,7 @@ export function SkillsSection() {
       x: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }

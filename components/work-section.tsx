@@ -1,68 +1,59 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { easeInOut } from "framer-motion"
 
 const projects = [
   {
     id: 0,
-    title: "DiploEdge",
-    category: "Web Development",
-    year: "2024",
+    title: "PageOneCV",
+    category: "Web Application",
+    year: "2025",
     description:
-      "A comprehensive platform designed to guide diploma engineering students. Provides a one-stop shop for study materials, job openings, higher studies entrance exam updates, and articles to guide students through their academic journey.",
-    link: "#", // Replace with actual link when available
-    tech: "HTML, CSS, Bootstrap, JavaScript, Express, MongoDB",
+      "Resume builder allowing users to create, edit, manage, and export multiple resumes. Secure authentication, serverless API endpoints, and client-side PDF generation for professional exports.",
+    link: "https://github.com/AryanSaxenaa/pageone-cv",
+    tech: "React, TypeScript, Tailwind CSS, Node.js, MongoDB, JWT, jsPDF",
   },
   {
     id: 1,
-    title: "Real-time Face Recognition System",
-    category: "Computer Vision",
-    year: "2024",
+    title: "FinWell Quest",
+    category: "Mobile App",
+    year: "2025",
     description:
-      "Implemented a real-time solution demonstrating foundational knowledge in computer vision algorithms. Built using Python with Tkinter for GUI, OpenCV for image processing, and NumPy for numerical computations.",
-    link: "#", // Replace with actual link when available
-    tech: "Python, Tkinter, OpenCV, NumPy",
+      "Gamified personal finance app with XP system, daily challenges, leaderboards, and Google Gemini AI for personalized advice. Secure Plaid API integration and D3.js-powered visualizations.",
+    link: "https://github.com/AryanSaxenaa/Finwell-Quest",
+    tech: "React Native, Expo, JavaScript, Zustand, Plaid API, Google Gemini AI, D3.js, SQLite",
   },
   {
     id: 2,
-    title: "Malicious URL Detector",
-    category: "Machine Learning",
-    year: "2024",
+    title: "Eventcraft",
+    category: "Web Application",
+    year: "2025",
     description:
-      "Developed a security-focused system using machine learning techniques to detect malicious URLs. Features include advanced feature extraction, XGBoost classification model, and comprehensive result visualization.",
-    link: "#", // Replace with actual link when available
-    tech: "Python, Flask, Machine Learning, XGBoost",
+      "Event management platform with automated notifications, ticketing, multi-role access, and AI-powered chatbot. Multi-channel notification system using Twilio SMS and SendGrid email.",
+    link: "https://github.com/AryanSaxenaa/Eventcraft",
+    tech: "React, Node.js, Express, MongoDB, Auth0, Redux Toolkit, Twilio, SendGrid, Google Gemini API",
   },
 ]
 
 const experiences = [
   {
     id: 0,
-    title: "Timechain Summer of Code",
-    role: "Contributor",
-    period: "June - July 2024",
+    title: "Xebia",
+    role: "Full Stack Developer Intern",
+    period: "June - July 2025",
     description:
-      "Successfully participated in TSOC 24 and qualified for the Coding Phase, where only 20% of participants advanced. Contributed to blockchain and cryptocurrency-related projects.",
+      "Developed a notification system integrating Twilio (SMS) and SendGrid (email) for event reminders, confirmations, and admin alerts. Implemented scheduled message delivery using node-cron for automated communications.",
     link: "#",
-    tech: "Blockchain, Cryptocurrency",
+    tech: "Node.js, Twilio, SendGrid, node-cron",
   },
   {
     id: 1,
-    title: "Hacktoberfest",
-    role: "Open Source Contributor",
-    period: "October 2023",
-    description:
-      "Actively participated in Hacktoberfest 2023, making valuable contributions to numerous open-source repositories. Focused on improving documentation, fixing bugs, and adding new features.",
-    link: "https://github.com/aryansaxena50",
-    tech: "Various Technologies",
-  },
-  {
-    id: 2,
     title: "Sahu Technologies",
-    role: "Web Development Intern",
+    role: "Web Developer Intern",
     period: "September - October 2022",
     description:
-      "Designed and developed template pages for educational content during internship at Sahu Technologies. Created responsive and user-friendly interfaces for their EdTech platform.",
+      "Recreated responsive web pages from design mockups using HTML, CSS, and JavaScript. Contributed to the UI development of the company’s EdTech platform.",
     link: "#",
     tech: "HTML, CSS, JavaScript",
   },
@@ -76,7 +67,7 @@ export function WorkSection() {
       transition: {
         staggerChildren: 0.1,
         delayChildren: 0.2,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }
@@ -88,7 +79,7 @@ export function WorkSection() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }
@@ -100,7 +91,7 @@ export function WorkSection() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1.0],
+        ease: easeInOut,
       },
     },
   }

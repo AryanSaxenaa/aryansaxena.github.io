@@ -115,12 +115,12 @@ export function ContactSection() {
               <div className="flex items-center justify-between">
                 <span className="contact-label text-foreground/60">LinkedIn</span>
                 <a
-                  href="https://linkedin.com/in/aryansaxena50"
+                  href="https://linkedin.com/in/aryan-saxena-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-text text-foreground hover:text-foreground/80 transition-colors duration-300 flex items-center gap-2"
                 >
-                  linkedin.com/in/aryansaxena50
+                  linkedin.com/in/aryan-saxena-dev
                   <ExternalLink className="h-3.5 w-3.5 opacity-50" />
                 </a>
               </div>
@@ -130,12 +130,12 @@ export function ContactSection() {
               <div className="flex items-center justify-between">
                 <span className="contact-label text-foreground/60">GitHub</span>
                 <a
-                  href="https://github.com/aryansaxena50"
+                  href="https://github.com/AryanSaxenaa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-text text-foreground hover:text-foreground/80 transition-colors duration-300 flex items-center gap-2"
                 >
-                  github.com/aryansaxena50
+                  github.com/AryanSaxenaa
                   <ExternalLink className="h-3.5 w-3.5 opacity-50" />
                 </a>
               </div>
